@@ -86,7 +86,7 @@ body {
     display:grid;
     grid-template-rows: auto 1fr auto;
     margin: 0;
-    background: url("/src/287526-salad-background-food-tasty-olives.jpg") no-repeat center center fixed; 
+    background: url("src/287526-salad-background-food-tasty-olives.jpg") no-repeat center center fixed; 
     background-size: cover;
     backdrop-filter: blur(3px);
     min-height: 100vh;

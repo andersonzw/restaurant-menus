@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Lora';
-    src: url('Lora-VariableFont_wght.ttf') format('truetype');
+    src: url('assets/Lora-VariableFont_wght.ttf') format('truetype');
 
   }
 @font-face {
   font-family: 'Lora-italic';
-  src: url('Lora-Italic-VariableFont_wght.ttf') format('truetype');
+  src: url('assets/Lora-Italic-VariableFont_wght.ttf') format('truetype');
 }
 :root {
     box-sizing: border-box;
@@ -86,7 +86,7 @@ body {
     display:grid;
     grid-template-rows: auto 1fr auto;
     margin: 0;
-    background: url("src/287526-salad-background-food-tasty-olives.jpg") no-repeat center center fixed; 
+    background: url("assets/287526-salad-background-food-tasty-olives.jpg") no-repeat center center fixed; 
     background-size: cover;
     backdrop-filter: blur(3px);
     min-height: 100vh;

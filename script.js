@@ -19,21 +19,21 @@ function loadTab(){
 
 function lunch(){
     title.textContent = "Lunch Buffet";
-    image.src = "/assets/lunch.jpg"
+    image.src = "assets/lunch.jpg"
     openingTimes.textContent = "12pm - 4pm"
 
 }
 
 function breakfast(){
     title.textContent = "Breakfast Buffet";
-    image.src = "/assets/breakfast.jpg"
+    image.src = "assets/breakfast.jpg"
     openingTimes.textContent = "7am - 10:30am"
 
 }
 
 function dinner(){
     title.textContent = "Dinner Buffet";
-    image.src = "/assets/dinner.jpg"
+    image.src = "assets/dinner.jpg"
     openingTimes.textContent = "6pm - 11:30pm (last order at 11pm)"
 }
 

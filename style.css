@@ -21,6 +21,10 @@ html{
     backdrop-filter: blur(2px);
 } */
 
+
+html * {
+    box-sizing: border-box;
+}
 html {
     height: 100vh;
     color: white;
@@ -64,14 +68,14 @@ html {
 
 .header > .tab {
     display: inline-block;
-    height: 20px;
+    height: 60px;
     padding: 20px 20px;
     cursor: pointer;
     font-size: 1.1rem;
     line-height: 1.1rem;
     font-weight: 600;
     border-top: rgb(201, 201, 201) 1px solid;
-    width: 100px;
+    width: 120px;
 }
 
 
@@ -86,10 +90,79 @@ body {
     display:grid;
     grid-template-rows: auto 1fr auto;
     margin: 0;
-    background: url("assets/287526-salad-background-food-tasty-olives.jpg") no-repeat center center fixed; 
+    /* background: url("assets/287526-salad-background-food-tasty-olives.jpg") no-repeat center center fixed;  */
     background-size: cover;
+
+    min-height: 100%;
+    width: 100%;
+}
+
+.background-image {
+    height: 100%;
+    width: 100%;
+    position:relative;
+    
+
+}
+
+.background-image .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    animation: slider 22s infinite;
     backdrop-filter: blur(3px);
-    min-height: 100vh;
+    filter: blur(4px);
+}
+
+
+
+.background-image .slide:nth-child(1){
+    background-image: url("assets/287526-salad-background-food-tasty-olives.jpg");
+    animation-delay: 0s;
+    
+}
+
+.background-image .slide:nth-child(2){
+    background-image: url("assets/cocoa_marshmallow_plaid_118517_3840x2160.jpg");
+    animation-delay: -5.5s;
+}
+.background-image .slide:nth-child(3){
+    background-image: url("assets/waffles_tea_lemon_108653_3840x2160.jpg");
+    animation-delay: -11s;
+}
+.background-image .slide:nth-child(4){
+    background-image: url("assets/mugs_hot_chocolate_marshmallow_198277_3840x2160.jpg");
+    animation-delay: -16.5s;
+}
+
+@keyframes slider {
+    0%, 23%, 100% {
+      opacity: 1;
+      animation-timing-function: ease;
+      z-index: 0;
+    }
+    25% {
+      opacity: 0;
+      animation-timing-function: step-end;
+      z-index: 0;
+    }
+    98% {
+      opacity: 1;
+      animation-timing-function: step-end;
+      z-index: -1;
+    }
+  }
+
+.header,
+.main-content,
+.footer{
+    position: relative;
+    z-index: 100;
 }
 
 .main-content {
